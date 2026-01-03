@@ -363,20 +363,6 @@ This project includes full Docker containerization with Continuous Deployment su
 - ✅ **Production Ready**: Health checks, restart policies, and optimized images
 - ✅ **Continuous Deployment**: GitHub Actions workflow for automated deployment
 
-### Documentation
-
-- **[Docker Deployment Guide](DOCKER_DEPLOYMENT.md)** - Complete containerization setup and local deployment
-- **[Continuous Deployment Guide](CONTINUOUS_DEPLOYMENT.md)** - Automated deployment with GitHub Actions
-- **[.env.example](.env.example)** - Environment variable template
-
-### Deployment to Digital Ocean
-
-The application can be deployed to Digital Ocean Droplets with automated continuous deployment:
-
-1. Configure GitHub Secrets (see [CONTINUOUS_DEPLOYMENT.md](CONTINUOUS_DEPLOYMENT.md))
-2. Push to main branch
-3. GitHub Actions automatically builds and deploys
-
 
 ### ✅ Core Requirements Met
 - **✅ No credentials in version control** - All sensitive data is stored in `.env` files (excluded from git)
@@ -385,7 +371,6 @@ The application can be deployed to Digital Ocean Droplets with automated continu
 ### 🏆 Extra Credit Features Implemented
 - **✅ Docker containerization** - Full Docker setup with multi-stage builds and Docker Compose orchestration
 - **✅ Continuous Integration** - GitHub Actions runs tests on every push/PR
-- **✅ Continuous Deployment** - Automated deployment to Digital Ocean
 
 ### 📋 Environment Variables
 All required `.env` files have been submitted to administrators via the team messenger channel as instructed.
