@@ -3,12 +3,6 @@
 [![CI Pipeline](https://github.com/agile-students-fall2025/4-final-random_grandeeism/actions/workflows/ci.yml/badge.svg)](https://github.com/agile-students-fall2025/4-final-random_grandeeism/actions/workflows/ci.yml)
 [![log github events](https://github.com/agile-students-fall2025/4-final-random_grandeeism/actions/workflows/event-logger.yml/badge.svg)](https://github.com/agile-students-fall2025/4-final-random_grandeeism/actions/workflows/event-logger.yml)
 
-## 🚀 Live Application
-
-**Try Fieldnotes now**: **[http://138.197.27.122](http://138.197.27.122)**
-
-*Deployed on Digital Ocean with Docker containerization and continuous deployment*
-
 ## Product Vision Statement
 
 In the current internet age there is a incomprehensible and immense amount of interesting content to peruse yet theres little time to read or consume in the moment upon encountering something new to read, and its liable to be forgotten. **Fieldnotes** is a mobile web app that can be used to save articles, podcasts, youtube videos to be resurfaced for later (optional offline) reading and annotating.
@@ -142,14 +136,6 @@ This is the recommended setup for both **development** and **deployment**.
 - `POST /api/auth/verify` - Verify JWT token
 - `POST /api/auth/refresh` - Refresh JWT token
 - `POST /api/auth/logout` - User logout
-
-### Feeds API
-- `GET /api/feeds` - Retrieve all feeds (supports filtering by category, status)
-- `GET /api/feeds/:id` - Retrieve a single feed by ID
-- `POST /api/feeds` - Create a new feed
-- `PUT /api/feeds/:id` - Update a feed
-- `DELETE /api/feeds/:id` - Delete a feed
-- `GET /api/feeds/:id/articles` - Get articles from a specific feed
 
 ### Tags API
 - `GET /api/tags` - Retrieve all tags (supports sorting by popular)
@@ -391,25 +377,17 @@ The application can be deployed to Digital Ocean Droplets with automated continu
 2. Push to main branch
 3. GitHub Actions automatically builds and deploys
 
-**Live Application**: http://138.197.27.122
-
-## Deployment Compliance
-
-This project fully complies with the [deployment instructions](instructions-4-deployment.md) requirements:
 
 ### ✅ Core Requirements Met
 - **✅ No credentials in version control** - All sensitive data is stored in `.env` files (excluded from git)
-- **✅ Digital Ocean deployment** - Application deployed at [http://138.197.27.122](http://138.197.27.122)  
 - **✅ Live front-end link** - Prominently featured in this README
 
 ### 🏆 Extra Credit Features Implemented
 - **✅ Docker containerization** - Full Docker setup with multi-stage builds and Docker Compose orchestration
-- **✅ Continuous Integration** - GitHub Actions runs tests on every push/PR ([CI Pipeline](https://github.com/agile-students-fall2025/4-final-random_grandeeism/actions/workflows/ci.yml))
-- **✅ Continuous Deployment** - Automated deployment to Digital Ocean ([Deploy Workflow](https://github.com/agile-students-fall2025/4-final-random_grandeeism/actions/workflows/deploy.yml))
+- **✅ Continuous Integration** - GitHub Actions runs tests on every push/PR
+- **✅ Continuous Deployment** - Automated deployment to Digital Ocean
 
 ### 📋 Environment Variables
 All required `.env` files have been submitted to administrators via the team messenger channel as instructed.
 
-## Want to contribute?
 
- Read our rules about [contributing](CONTRIBUTING.md#contributing-rules) as well as instructions on [setting up the local development environment](CONTRIBUTING.md#instructions-for-setting-up-the-local-environment) and [building and testing](CONTRIBUTING.md#build-and-test-instructions)
